@@ -1,0 +1,35 @@
+<!--
+  Generated template for the Stockin page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title align="center">Stock Out</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <div class="spacer" style="height: 20px;"></div>
+
+
+<ion-card>
+  <ion-card-header>All products</ion-card-header>
+  <ion-list inset>
+    <ion-item *ngFor = "let product of products" (click)="showDetail(product)">
+  
+     <div item-left>{{ product.name }}</div>
+     <div item-right>{{ product.quantity }}</div>
+     
+    </ion-item>
+ </ion-list>
+</ion-card>
+
+
+</ion-content>

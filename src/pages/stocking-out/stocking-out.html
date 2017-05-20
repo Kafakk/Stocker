@@ -1,0 +1,34 @@
+<!--
+  Generated template for the StockingIn page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title align="center">Stocking Out</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>  
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input text-right type="text" [(ngModel)]="product.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Quantity</ion-label>
+      <ion-input text-right type="text" [(ngModel)]="Quantity"></ion-input>
+    </ion-item>
+ </ion-list>
+
+<button ion-button block (click)="save()">Save</button>
+
+</ion-content>
